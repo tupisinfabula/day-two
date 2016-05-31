@@ -1,13 +1,12 @@
-(1..100).each do |number|
-  if number % 3 == 0
-    puts "Bit"
-  elsif number % 5 == 0
-    puts "Maker"
-
-  elsif
-    puts number
-  else(number % 3 == 0 && number % 5 == 0)
+(1..100).each do |x|
+  if (x % 3 == 0 && x % 5 == 0)
     puts "Bitmaker"
+  elsif x % 3 == 0
+    puts "Bit"
+  elsif x % 5 == 0
+    puts "Maker"
+  else
+    puts x
   end
 end
 
